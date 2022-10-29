@@ -21,22 +21,22 @@ const Navbar: React.FC = (props) => {
         )}
         <ul className="flex items-center gap-16 text-primaryBlack dark:text-white font-semibold">
           <li className="group cursor-pointer">
-            <span className="bg-left-bottom bg-gradient-to-r from-custom-green to-custom-green bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+            <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
               Home
             </span>
           </li>
           <li className="group cursor-pointer">
-            <span className="bg-left-bottom bg-gradient-to-r from-custom-green to-custom-green bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+            <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
               About
             </span>
           </li>
           <li className="group cursor-pointer">
-            <span className="bg-left-bottom bg-gradient-to-r from-custom-green to-custom-green bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+            <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
               Projects
             </span>
           </li>
           <li className="group cursor-pointer">
-            <span className="bg-left-bottom bg-gradient-to-r from-custom-green to-custom-green bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+            <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
               Contact
             </span>
           </li>
