@@ -1,10 +1,9 @@
-import { useState, FC } from "react";
+import { useState, FC, useContext } from "react";
 import { Link } from "react-router-dom";
 
 // Import Icons
 import { HiMenuAlt3 } from "react-icons/hi";
 import logo from "../assets/logo.svg";
-import darkLogo from "../assets/darkLogo.svg";
 import { CgClose } from "react-icons/cg";
 
 // Import Component
@@ -89,14 +88,14 @@ const Navbar: FC = () => {
               <button onClick={handleMobileNav}>
                 <CgClose
                   size={30}
-                  className="text-primaryBlack dark:text-white"
+                  className="text-primaryBlack dark:text-primaryBlack"
                 />
               </button>
             ) : (
               <button onClick={handleMobileNav}>
                 <HiMenuAlt3
                   size={30}
-                  className="text-primaryBlack dark:text-white"
+                  className="text-primaryBlack dark:text-primaryBlack"
                 />
               </button>
             )}
