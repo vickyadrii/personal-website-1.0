@@ -9,7 +9,7 @@ const HomeContent: React.FC = () => {
     <section className="max-w-5xl m-auto p-5">
       <div className="flex lg:flex-row flex-col items-center md:justify-between md:gap-14 lg:gap-0 gap-12">
         <div className="flex flex-col lg:items-start items-center md:gap-9 gap-8 md:my-5">
-          <div className="font-montserratAlternate lg:text-left text-center text-primaryBlack flex flex-col gap-5">
+          <div className="font-montserratAlternate lg:text-left text-center text-primaryBlack dark:text-white flex flex-col gap-5">
             <h2 className="sm:text-5xl text-3xl font-bold">Hi everyone!</h2>
             <h3 className="sm:text-3xl text-xl font-bold">
               I’m{" "}

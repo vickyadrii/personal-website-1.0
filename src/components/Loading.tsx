@@ -1,3 +1,4 @@
+// Import Icon
 import loading from "../assets/loading.svg";
 
 const Loading: React.FC = () => {

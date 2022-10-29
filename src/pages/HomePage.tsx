@@ -9,14 +9,12 @@ import wave1 from "../assets/wave1.svg";
 import wave2 from "../assets/wave2.svg";
 
 const HomePage: FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const handleDarkMode = () => {
-    setDarkMode((show) => !show);
-  };
   return (
     <section>
-      <div className="relative font-montserrat bg-gradient-to-b from-white to-teal-50 h-screen dark:bg-gray-800 -z-0">
+      <div
+        className="
+        relative font-montserrat bg-gradient-to-b from-white to-teal-50 h-screen -z-0"
+      >
         <div className="">
           <img
             src={wave1}
@@ -31,7 +29,7 @@ const HomePage: FC = () => {
         </div>
         <div className="z-50">
           <Navbar />
-          <div className="absolute top-0 right-0 left-0 pt-20 flex items-center justify-center h-screen -z-10">
+          <div className="absolute dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-800 top-0 right-0 left-0 pt-20 flex items-center justify-center h-screen -z-10">
             <HomeContent />
           </div>
         </div>

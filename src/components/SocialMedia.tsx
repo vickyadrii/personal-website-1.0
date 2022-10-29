@@ -4,7 +4,10 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 const myCV = require("../assets/cv-vickyherdiansyahadri.pdf");
 
+
+
 const SocialMedia: React.FC = () => {
+
   return (
     <div className="flex flex-col md:items-start items-center gap-12">
       <div className="flex items-center md:gap-10 gap-7">
