@@ -24,7 +24,7 @@ const Navbar: React.FC = (props) => {
   };
 
   return (
-    <section className={`${darkMode ? "dark" : ""} max-w-5xl m-auto p-5`}>
+    <section className={`${darkMode ? "dark" : ""} max-w-5xl m-auto p-5 z-50`}>
       <nav className="flex items-center justify-between px-10 md:py-5 py-3 bg-white dark:bg-slate-800 shadow-md rounded-full">
         {darkMode ? (
           <img src={darkLogo} alt="darkLogo" className="md:w-[54px] w-10" />
