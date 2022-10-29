@@ -21,7 +21,7 @@ const HomePage: FC = () => {
           <img
             src={wave1}
             alt="wave1"
-            className="h-screen absolute right-0 -z-10"
+            className="h-screen md:absolute hidden right-0 md:opacity-100 opacity-20 -z-10"
           />
           <img
             src={wave2}
@@ -31,7 +31,9 @@ const HomePage: FC = () => {
         </div>
         <div className="z-50">
           <Navbar />
-          <HomeContent />
+          <div className="absolute top-0 right-0 left-0 pt-20 flex items-center justify-center h-screen">
+            <HomeContent />
+          </div>
         </div>
       </div>
     </section>
