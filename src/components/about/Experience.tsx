@@ -25,24 +25,6 @@ const Experience = () => {
             </div>
           </div>
         ))}
-        {/* <div className="flex flex-col gap-1 items-end">
-          <h3 className="text-xl font-bold">Kalla Group</h3>
-          <p className="text-sm">August 2022 - Present</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="w-5 h-5 bg-primaryPurple rounded-full" />
-          <div className="h-24 bg-primaryGreen w-1 rounded-b-full" />
-        </div>
-        <div className="flex flex-col gap-1">
-          <h3 className="text-xl font-bold text-primaryGreen">
-            Web Developer Intern
-          </h3>
-          <p className="text-sm max-w-sm leading-6 font-medium">
-            Develop WhatsApp Blast using Next.js, Express.js and Baileys. I
-            learn a lot about work together with team UI/UX, System Analyst and
-            Product Manager.
-          </p>
-        </div> */}
       </div>
     </section>
   );

@@ -1,7 +1,15 @@
+import { useState } from "react";
+
 // Import Images
 import profilePhoto from "../../assets/profilePhoto.png";
 
 const Profile = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 1000);
+
   return (
     <section className="bg-white dark:bg-slate-700 shadow-md rounded-[10px] p-5 md:h-[470px]">
       <div className="flex flex-col gap-5">
@@ -16,11 +24,17 @@ const Profile = () => {
           and implement it with React
         </p>
       </div>
-      <img
-        src={profilePhoto}
-        alt="profile photo"
-        className="w-56 m-auto mt-8 rounded-full shadow-lg drop-shadow-lg"
-      />
+      {isLoading ? (
+        <div className="animate-pulse flex justify-center my-8">
+          <div className="rounded-full bg-slate-200 w-56 h-56"></div>
+        </div>
+      ) : (
+        <img
+          src={profilePhoto}
+          alt="profile photo"
+          className="w-56 m-auto mt-8 rounded-full shadow-lg drop-shadow-lg"
+        />
+      )}
     </section>
   );
 };

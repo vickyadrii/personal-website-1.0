@@ -1,8 +1,15 @@
+import { useState } from "react";
+
 // Import Images
 import untadLogo from "../../assets/untadlogo.png";
 import EducationImage from "../../assets/EducationImage.png";
 
 const Education = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 1000);
   return (
     <section className="bg-white dark:bg-slate-700 shadow-md rounded-[10px] p-5 md:h-[470px] text-primaryBlack dark:text-white">
       <h2 className="md:text-4xl font-bold text-primaryBlue dark:text-primaryPurple">
@@ -10,11 +17,18 @@ const Education = () => {
       </h2>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-5">
-          <img
-            src={untadLogo}
-            alt="Untad Logo"
-            className=" m-auto my-5 rounded-full shadow-lg drop-shadow-lg"
-          />
+          {isLoading ? (
+            <div className="animate-pulse flex justify-center my-5">
+              <div className="rounded-xl bg-slate-200 w-16 h-16"></div>
+            </div>
+          ) : (
+            <img
+              src={untadLogo}
+              alt="Untad Logo"
+              className="w-16 h-16 m-auto my-5 rounded-full shadow-lg drop-shadow-lg"
+            />
+          )}
+
           <div>
             <h3 className="md:text-3xl font-bold">Tadulako University</h3>
             <p className="font-medium">Bachelor of Computer Science</p>
