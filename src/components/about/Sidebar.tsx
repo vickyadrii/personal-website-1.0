@@ -14,38 +14,38 @@ const Sidebar: React.FC = () => {
   const sidebarBtn = [
     {
       id: 0,
-      icon: <RiProfileFill className="flex w-7 h-7 " />,
+      icon: <RiProfileFill className="flex md:w-7 w-6 md:h-7 h-6" />,
     },
     {
       id: 1,
       icon: (
-        <MdSchool className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7" />
+        <MdSchool className="flex md:w-7 w-6 md:h-7 h-6" />
       ),
     },
     {
       id: 2,
       icon: (
-        <FaBuilding className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7" />
+        <FaBuilding className="flex md:w-7 w-6 md:h-7 h-6" />
       ),
     },
     {
       id: 3,
       icon: (
-        <HiCode className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7" />
+        <HiCode className="flex md:w-7 w-6 md:h-7 h-6" />
       ),
     },
   ];
 
   return (
     <section className="flex justify-between w-full max-w-5xl m-auto p-5">
-      <div className="flex flex-row-reverse gap-5 w-full justify-between">
+      <div className="flex md:flex-row-reverse flex-col gap-5 w-full justify-between">
         <div>
           {currIndex === 0 && <Profile />}
           {currIndex === 1 && <Education />}
           {currIndex === 2 && <Experience />}
           {currIndex === 3 && <Skills />}
         </div>
-        <div className="flex items-center justify-center flex-col gap-10 bg-white dark:bg-slate-700 px-3 py-10 shadow-md rounded-[10px] md:h-[470px]">
+        <div className="flex  items-center justify-center md:flex-col gap-10 bg-white dark:bg-slate-700 px-3 md:py-10 py-3 shadow-md rounded-[10px] md:h-[470px]">
           {sidebarBtn.map(({ id, icon }) => (
             <button
               key={id}

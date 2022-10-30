@@ -1,5 +1,5 @@
 import { useState, FC, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 // Import Icons
 import { HiMenuAlt3 } from "react-icons/hi";
@@ -10,11 +10,36 @@ import { CgClose } from "react-icons/cg";
 import ThemeSwitch from "../components/home/ThemeSwitch";
 
 const Navbar: FC = () => {
-  const [mobileNav, setMobileNav] = useState(false);
+  const [mobileNav, setMobileNav] = useState<boolean>(false);
+
+  const location = useLocation();
 
   const handleMobileNav = () => {
     setMobileNav((show) => !show);
   };
+
+  const navbarList = [
+    {
+      id: 0,
+      list: "Home",
+      href: "/",
+    },
+    {
+      id: 1,
+      list: "About",
+      href: "/about",
+    },
+    {
+      id: 2,
+      list: "Projects",
+      href: "/projects",
+    },
+    {
+      id: 3,
+      list: "Contact",
+      href: "/contact",
+    },
+  ];
 
   return (
     <section className=" max-w-5xl m-auto p-5 z-50">
@@ -23,62 +48,42 @@ const Navbar: FC = () => {
 
         <div className="flex items-center md:gap-16 gap-4">
           <ul className="md:flex gap-16 text-primaryBlack font-semibold hidden">
-            <li className="group cursor-pointer">
-              <Link to={"/"}>
-                <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
-                  Home
-                </span>
-              </Link>
-            </li>
-            <li className="group cursor-pointer">
-              <Link to={"/about"}>
-                <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
-                  About
-                </span>
-              </Link>
-            </li>
-            <li className="group cursor-pointer">
-              <Link to={"/"}>
-                <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
-                  Projects
-                </span>
-              </Link>
-            </li>
-            <li className="group cursor-pointer">
-              <Link to={"/"}>
-                <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
-                  Contact
-                </span>
-              </Link>
-            </li>
+            {navbarList.map(({ id, list, href }) => (
+              <li key={id} className="group cursor-pointer">
+                <Link
+                  to={href}
+                  className={`${
+                    location.pathname === href
+                      ? "border-b-2 border-b-primaryGreen pb-[2px]"
+                      : "bg-left-bottom bg-gradient-to-r from-primaryGreen to-primaryGreen bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1"
+                  }`}
+                >
+                  <button>{list}</button>
+                </Link>
+              </li>
+            ))}
           </ul>
           <div
             className={`${
               mobileNav ? "left-0 top-0" : "-left-full top-0"
-            } bg-white dark:bg-slate-800 shadow-md md:hidden absolute z-10 transition-all ease-in-out`}
+            }  bg-gradient-to-b from-teal-50 to-white dark:bg-slate-800 shadow-md md:hidden absolute z-10 transition-all ease-in-out`}
           >
             <div className="h-screen w-56 flex items-center justify-center">
               <ul className="flex flex-col gap-16 text-primaryBlack dark:text-white font-semibold">
-                <li className="group cursor-pointer">
-                  <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
-                    Home
-                  </span>
-                </li>
-                <li className="group cursor-pointer">
-                  <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
-                    About
-                  </span>
-                </li>
-                <li className="group cursor-pointer">
-                  <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
-                    Projects
-                  </span>
-                </li>
-                <li className="group cursor-pointer">
-                  <span className="bg-left-bottom bg-gradient-to-r from-primaryGreen dark:from-white to-primaryGreen dark:to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
-                    Contact
-                  </span>
-                </li>
+                {navbarList.map(({ id, list, href }) => (
+                  <li key={id} className="group cursor-pointer">
+                    <Link
+                      to={href}
+                      className={`${
+                        location.pathname === href
+                          ? "border-b-2 border-b-primaryGreen pb-[2px]"
+                          : "bg-left-bottom bg-gradient-to-r from-primaryGreen to-primaryGreen bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1"
+                      }`}
+                    >
+                      <button>{list}</button>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

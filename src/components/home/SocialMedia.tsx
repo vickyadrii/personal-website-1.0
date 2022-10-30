@@ -9,7 +9,7 @@ const myCV = require("../../assets/cv-vickyherdiansyahadri.pdf");
 const SocialMedia: React.FC = () => {
 
   return (
-    <div className="flex flex-col md:items-start items-center gap-12">
+    <div className="flex flex-col lg:items-start items-center gap-12">
       <div className="flex items-center md:gap-10 gap-7">
         <a
           href="https://github.com/vickyadri29"

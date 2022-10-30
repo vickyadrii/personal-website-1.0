@@ -27,7 +27,7 @@ export const dataExperience = {
     },
     {
       id: 2,
-      company: "Bangkit Academy 2022 by Google, GoTo, Traveloka",
+      company: "Bangkit Academy 2022",
       date: "February 2022 - July 2022",
       title: "Cloud Computing Learning Path",
       desc: "Learn Cloud Computing Fundamental using Google Cloud Platform, Softskills, and got friends from all over Indonesia",

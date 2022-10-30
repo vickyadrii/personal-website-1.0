@@ -17,7 +17,7 @@ const Home: React.FC = () => {
           <img
             src={wave1}
             alt="wave1"
-            className="h-screen sm:absolute md:flex hidden sm:right-0 md:opacity-100 opacity-20 -z-20"
+            className="h-screen sm:absolute lg:flex hidden sm:right-0 md:opacity-100 opacity-20 -z-20"
           />
           <img
             src={wave2}
