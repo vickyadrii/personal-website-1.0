@@ -4,6 +4,7 @@ import Loading from "./components/Loading";
 import { MyThemeContextProvider } from "./context/MyThemeContext";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
 
 function App() {
   return (
@@ -15,6 +16,14 @@ function App() {
             element={
               <Suspense fallback={<Loading />}>
                 <HomePage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <Suspense fallback={<Loading />}>
+                <AboutPage />
               </Suspense>
             }
           />

@@ -2,7 +2,7 @@
 import { AiFillInstagram } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-const myCV = require("../assets/cv-vickyherdiansyahadri.pdf");
+const myCV = require("../../assets/cv-vickyherdiansyahadri.pdf");
 
 
 

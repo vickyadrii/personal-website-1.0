@@ -1,8 +1,8 @@
 // Import Component
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "../home/SocialMedia";
 
 // Import File CV and Images
-import HomeImages from "../assets/HomeImages.png";
+import HomeImages from "../../assets/HomeImages.png";
 
 const HomeContent: React.FC = () => {
   return (
@@ -19,8 +19,8 @@ const HomeContent: React.FC = () => {
             </h3>
             <div className="max-w-md">
               <p className="sm:text-lg font-montserrat font-medium md:leading-8 leading-7">
-                An undergraduate information technology student who experience
-                in frontend web developer.
+                An undergraduate information technology student who focused
+                on frontend web developer.
               </p>
             </div>
           </div>

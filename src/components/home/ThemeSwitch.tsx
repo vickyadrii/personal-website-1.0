@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { HiMoon, HiSun } from "react-icons/hi";
-import MyThemeContext from "../context/MyThemeContext";
+import MyThemeContext from "../../context/MyThemeContext";
 
 const ThemeSwitch = () => {
   const themeCtx: { isDarkMode?: boolean; toggleThemeHandler: () => void } =
