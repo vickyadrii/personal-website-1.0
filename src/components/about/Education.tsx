@@ -2,7 +2,7 @@
 import untadLogo from "../../assets/untadlogo.png";
 import EducationImage from "../../assets/EducationImage.png";
 
-const Education = () => {
+const Education: React.FC = () => {
   return (
     <section className="bg-white dark:bg-slate-700 shadow-md rounded-[10px] p-5 md:w-[888px] md:h-[470px] h-[450px] text-primaryBlack dark:text-white">
       <h2 className="md:text-4xl text-2xl md:text-left text-center font-bold text-primaryBlue dark:text-primaryPurple">

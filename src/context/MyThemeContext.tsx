@@ -12,7 +12,7 @@ interface ThemePropsInterface {
 export const MyThemeContextProvider = (
   props: ThemePropsInterface
 ): ReactElement => {
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const [isDarkTheme, setIsDarkTheme] = useState<boolean>(true);
   useEffect(() => initialThemeHandler());
 
   const isLocalStorageEmpty = (): boolean => {

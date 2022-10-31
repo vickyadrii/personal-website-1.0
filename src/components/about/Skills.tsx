@@ -1,7 +1,7 @@
 // Import Data
 import { dataSkills } from "../../data";
 
-const Skills = () => {
+const Skills: React.FC = () => {
   const { datas } = dataSkills;
   return (
     <section className="bg-white dark:bg-slate-700 shadow-md rounded-[10px] p-5 md:w-[888px] md:h-[470px] h-[450px]">

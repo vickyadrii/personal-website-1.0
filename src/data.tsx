@@ -1,3 +1,4 @@
+// Images About Page
 const reactjs = require("./assets/about/reactjs.png");
 const nextjs = require("./assets/about/nextjs.png");
 const tailwind = require("./assets/about/tailwind.png");
@@ -8,6 +9,11 @@ const gcp = require("./assets/about/gcp.png");
 const firebase = require("./assets/about/firebase.png");
 const js = require("./assets/about/js.png");
 const ts = require("./assets/about/ts.png");
+
+// Images Projects Page
+const project1 = require("./assets/impactpalu.png");
+const project2 = require("./assets/webapp-pt.png");
+const project3 = require("./assets/budayai.png");
 
 export const dataExperience = {
   datas: [
@@ -86,6 +92,29 @@ export const dataSkills = {
       id: 9,
       image_url: gcp,
       title: "GCP",
+    },
+  ],
+};
+
+export const projectCards = {
+  datas: [
+    {
+      id: 0,
+      image_url: project1,
+      project_name: "Impact Palu",
+      desc: "Develop a project used Next.js with Tailwind css",
+    },
+    {
+      id: 1,
+      image_url: project2,
+      project_name: "Web App Programming Tadulako",
+      desc: "Develop a project used React Typescript with Tailwind.css",
+    },
+    {
+      id: 2,
+      image_url: project3,
+      project_name: "BudayAI",
+      desc: "Create a RESTFul API used Express.js and Firestore database. And then deploy it using Cloud Function",
     },
   ],
 };

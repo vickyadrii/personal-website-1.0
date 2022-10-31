@@ -1,6 +1,6 @@
 import { MdSchool } from "react-icons/md";
 import { RiProfileFill } from "react-icons/ri";
-import { FaBuilding, FaCode } from "react-icons/fa";
+import { FaBuilding } from "react-icons/fa";
 import { HiCode } from "react-icons/hi";
 import { useState } from "react";
 import Profile from "./Profile";
@@ -9,7 +9,7 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 
 const Sidebar: React.FC = () => {
-  const [currIndex, setCurrIndex] = useState(0);
+  const [currIndex, setCurrIndex] = useState<number>(0);
 
   const sidebarBtn = [
     {
@@ -18,21 +18,15 @@ const Sidebar: React.FC = () => {
     },
     {
       id: 1,
-      icon: (
-        <MdSchool className="flex md:w-7 w-6 md:h-7 h-6" />
-      ),
+      icon: <MdSchool className="flex md:w-7 w-6 md:h-7 h-6" />,
     },
     {
       id: 2,
-      icon: (
-        <FaBuilding className="flex md:w-7 w-6 md:h-7 h-6" />
-      ),
+      icon: <FaBuilding className="flex md:w-7 w-6 md:h-7 h-6" />,
     },
     {
       id: 3,
-      icon: (
-        <HiCode className="flex md:w-7 w-6 md:h-7 h-6" />
-      ),
+      icon: <HiCode className="flex md:w-7 w-6 md:h-7 h-6" />,
     },
   ];
 
@@ -45,7 +39,7 @@ const Sidebar: React.FC = () => {
           {currIndex === 2 && <Experience />}
           {currIndex === 3 && <Skills />}
         </div>
-        <div className="flex  items-center justify-center md:flex-col gap-10 bg-white dark:bg-slate-700 px-3 md:py-10 py-3 shadow-md rounded-[10px] md:h-[470px]">
+        <div className="flex items-center justify-center md:flex-col gap-10 bg-white dark:bg-slate-700 px-3 md:py-10 py-3 shadow-md rounded-[10px] md:h-[470px]">
           {sidebarBtn.map(({ id, icon }) => (
             <button
               key={id}

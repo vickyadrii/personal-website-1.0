@@ -1,7 +1,7 @@
 // Import Data
 import { dataExperience } from "../../data";
 
-const Experience = () => {
+const Experience: React.FC = () => {
   const { datas } = dataExperience;
   return (
     <section className="bg-white dark:bg-slate-700 shadow-md rounded-[10px] p-5 md:w-[888px] md:h-[470px] h-[450px] text-primaryBlack dark:text-white">

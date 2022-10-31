@@ -1,7 +1,7 @@
 // Import Images
 import profilePhoto from "../../assets/profilePhoto.png";
 
-const Profile = () => {
+const Profile: React.FC = () => {
   return (
     <section className="bg-white dark:bg-slate-700 shadow-md rounded-[10px] p-5 md:w-[888px] md:h-[470px] h-[450px]">
       <div className="flex flex-col md:text-left text-center md:gap-5 gap-3">
