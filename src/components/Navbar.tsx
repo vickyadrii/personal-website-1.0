@@ -34,11 +34,11 @@ const Navbar: FC = () => {
       list: "Projects",
       href: "/projects",
     },
-    {
-      id: 3,
-      list: "Contact",
-      href: "/contact",
-    },
+    // {
+    //   id: 3,
+    //   list: "Contact",
+    //   href: "/contact",
+    // },
   ];
 
   return (
