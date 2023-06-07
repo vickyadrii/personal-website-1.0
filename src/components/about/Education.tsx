@@ -33,13 +33,20 @@ const Education: React.FC = () => {
           Majoring in Information Technology who learns about Algorithms, Data
           Structures, Calculus, Web Fundamentals, Machine Learning, Robotics,
           Cloud Computing, Micro Services, and Application Programming
-          Interfaces (APIs).
+          Interfaces (API).
         </p>
-        <p className="font-medium md:text-lg text-xs md:leading-normal leading-5">
-          Here I have community experience as a Public Relations in the
-          Programming Community, namely Tadulako Programming. We created a
-          design on Instagram for the new post.
-        </p>
+        <ul>
+          <li className="font-medium md:text-lg text-xs md:leading-normal leading-5">
+            ⚪ Curriculum Core Team - Google Developer Student Clubs of Tadulako
+            University
+          </li>
+          <li className="font-medium md:text-lg text-xs md:leading-normal leading-5">
+            ⚪ Public Relation - Programming Tadulako University
+          </li>
+          <li className="font-medium md:text-lg text-xs md:leading-normal leading-5">
+            ⚪ Cloud Computing Learning Path - Bangkit Graduate 2022
+          </li>
+        </ul>
       </div>
     </section>
   );

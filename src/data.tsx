@@ -19,25 +19,32 @@ export const dataExperience = {
   datas: [
     {
       id: 0,
+      company: "Mau Belajar Apa",
+      date: "January 2023 - Present",
+      title: "Junior Frontend Engineer",
+      desc: "Build, maintain, develop new features, and improve the education platform of the Eduqat web app using Next.js.",
+    },
+    {
+      id: 1,
       company: "Kalla Group",
-      date: "August 2022 - Present",
+      date: "August 2022 - December 2022",
       title: "Web Developer Intern",
       desc: "Develop WhatsApp Blast using Next.js, Express.js and Baileys. I learn a lot about work together with team UI/UX, System Analyst and Product Manager.",
     },
     {
-      id: 1,
+      id: 2,
       company: "Kodingna",
       date: "June 2022 - September 2022",
       title: "Frontend Web Developer Intern",
       desc: "Create landing page design on Figma and develop it with React.js and Tailwind.css. There, I learn about agile methodologies.",
     },
-    {
-      id: 2,
-      company: "Bangkit Academy 2022",
-      date: "February 2022 - July 2022",
-      title: "Cloud Computing Learning Path",
-      desc: "Learn Cloud Computing Fundamental using Google Cloud Platform, Softskills, and got friends from all over Indonesia",
-    },
+      // {
+      //   id: 3,
+      //   company: "Bangkit Academy 2022",
+      //   date: "February 2022 - July 2022",
+      //   title: "Cloud Computing Learning Path",
+      //   desc: "Learn Cloud Computing Fundamental using Google Cloud Platform, Softskills, and got friends from all over Indonesia",
+      // },
   ],
 };
 

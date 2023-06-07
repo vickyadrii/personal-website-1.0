@@ -9,11 +9,7 @@ const Profile: React.FC = () => {
           Profile
         </h2>
         <p className="font-medium md:text-lg text-xs md:leading-normal leading-5 text-primaryBlack dark:text-white">
-          An information technology student who focuses on frontend development.
-          Had internship experience as a frontend web developer in a software
-          house. I am also a graduate of Bangkit in 2022, a cloud computing
-          learning path. And next, learn about TypeScript and implement it with
-          React
+          As a Junior Frontend Engineer, I am interested about web development and learn new technologies. I am interest in React, so I'm able to develop web app and consume APIs. I have experience using agile methodologies and scrum to ensure that the web platform meets the company's standards for performance and realibility.
         </p>
       </div>
       <img
